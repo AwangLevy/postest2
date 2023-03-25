@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Saran</title>
+    <link rel="stylesheet" href="saran.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="kotak">
+            <form>
+                <h1>Form Saran</h1>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="saran">Saran:</label>
+                <textarea id="saran" name="saran" rows="5" cols="40"></textarea><br><br>
+                <button type="button" onclick="simpanSaran()">Kirim</button>
+                <button type="button"><a href="home.html"class ="link">kembali</a></button>
+                <div class="right">
+                    <h2>Saran yang Telah Dikirim:</h2>
+                    <ul id="daftarSaran"></ul>
+            </form>
+            </div>
+            <!-- <div class="right">
+            <h2>Saran yang Telah Dikirim:</h2>
+            <ul id="daftarSaran"></ul>
+        </div> -->
+        </div>
+</body>
+<script src="saran.js"></script>
+
+</html>

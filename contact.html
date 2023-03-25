@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log In</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><a href="">AwangRental</a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="partners.html">partners</a></li>
+                        <li><a href="contact.html" class="tbl-biru">Pemesanan</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <form>
+        <table>
+            <h2>pemesanan kipas dan ac standing</h2>
+            <div>
+                <div>
+                    <label> Nama: </label> <br>
+                    <input type="text" id="pem_nama" placeholder="Masukkan Nama Anda" required>
+                    <br><br/>
+
+                    <label> Email: </label> <br>
+                    <input type="email" id="pem_email" placeholder="Masukkan email Anda" required>
+                    <br><br/>
+
+                    <label>No HP: </label><br>
+                    <input type="text" id="pem_noHP" placeholder="Masukkan No HP Anda" required>
+                    <br><br/>
+                    <label>unit: </label><br>
+                    <input type="text" id="pem_unit" placeholder="Masukkan berapa unit disewa" required>
+                    <br><br/>
+
+                    <label>pemesanan:</label><br>
+                    <input type="radio" id="jenis" name="pms" value="ac standing" />ac standing
+                    <input type="radio" id="jenis" name="pms" value="kipas blower" />kipas blower
+                    <br><br/>
+
+                    <label>menggunakan:</label><br>
+                    <input type="checkbox" id="pem_esbatu" name="menggunakan" value="es batu">es batu
+                    <input type="checkbox" id="pem_pengharum" name="menggunakan" value="pengharum">pengharum
+                    <input type="checkbox" id="pem_lainnya" name="menggunakan" value="lainnya">lainnya
+                    <br><br/>
+
+                    <label>daerah:</label><br>
+                    <select id="daerah" name="daerah">
+                    <option value="samarinda">Samarinda</option>
+                    <option value="tengarong">tengarong</option>
+                    <option value="balikpapan">balikpapan</option>
+                    <option value="lain">lainnya</option>
+                </select>
+                    <label>Detail Alamat:</label>
+                    <br>
+                    <textarea id="pem_detail" required placeholder="Tulis alamat lengkap disini"></textarea>
+                    <br><br/>
+                    <!-- <button type="button" value="kirim" id="pemesanan" onclick="saveForm()">kirim</button> -->
+                    <input type="button" value="kirim" onclick="saveForm()">
+                    <br><br/>
+                    <div class="data">
+                        <div id="hasil"></div>
+                    </div>
+    </form>
+    </nav>
+
+
+</body>
+<script src="form.js"></script>
+
+</html>
